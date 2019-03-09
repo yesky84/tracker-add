@@ -17,5 +17,3 @@ docker run -d -p "9091:9091" --name transmission-daemon transmission-daemon-imag
 docker run -d -e HOSTPORT=transmission-daemon:9091 -e TR_AUTH=user:password --name=transmission-tracker-add andrewmhub/transmission-tracker-add:latest
 ```
 or do what you want
-
-Don't be confused with `failed` message. In most cases, it means tracker(s) already added and/or exists in current torrent.
