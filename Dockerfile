@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+ENV TORRENTLIST=https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt
+
 COPY ./tracker-add-auto.sh /opt/tracker-add-auto.sh
 
 RUN apk add --update \
