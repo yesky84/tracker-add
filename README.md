@@ -10,11 +10,6 @@ cd directory where Dockerfile `docker build -t transmission-tracker-add:latest .
 ```
 docker run --net=host -d -e HOSTPORT=localhost:9091 -e TR_AUTH=user:password --name=transmission-tracker-add andrewmhub/transmission-tracker-add:latest
 ```
-if you use transmission daemon in docker then do something like that
-```
-docker network create mynet
-docker run -d -p "9091:9091" --name transmission-daemon transmission-daemon-image
-docker run -d -e HOSTPORT=transmission-daemon:9091 -e TR_AUTH=user:password --name=transmission-tracker-add andrewmhub/transmission-tracker-add:latest
-```
-or read [Docker Documentation](https://docs.docker.com/network/)
+if you use transmission daemon in docker then read [Docker Documentation](https://docs.docker.com/network/)
+
 
