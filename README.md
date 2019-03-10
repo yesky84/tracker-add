@@ -16,4 +16,5 @@ docker network create mynet
 docker run -d -p "9091:9091" --name transmission-daemon transmission-daemon-image
 docker run -d -e HOSTPORT=transmission-daemon:9091 -e TR_AUTH=user:password --name=transmission-tracker-add andrewmhub/transmission-tracker-add:latest
 ```
-or do what you want
+or read [Docker Documentation](https://docs.docker.com/network/)
+
